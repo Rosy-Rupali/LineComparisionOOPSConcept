@@ -6,15 +6,14 @@ public class LineComparison {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Line Comparison Computation program");
-
-		compareLength();
+		LineComparison lineCompare = new LineComparison();
+		lineCompare.compareLength();
 	}
 
 	/**
 	 * Calculating length of lines
 	 */
-	public static double coordinates() {
-		System.out.println("Welcome to Line Comparison Computation program");
+	private static double coordinates() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the first co-ordinate for x-axis:");
 		int x1 = sc.nextInt();
@@ -31,7 +30,7 @@ public class LineComparison {
 	/**
 	 * Comparing the length of lines
 	 */
-	public static void length() {
+	private void length() {
 		double line1 = coordinates();
 		String s1 = Double.toString(line1);
 		double line2 = coordinates();
@@ -46,7 +45,7 @@ public class LineComparison {
 	/**
 	 * Checking the greater line
 	 */
-	public static void compareLength() {
+	private void compareLength() {
 		double line1 = coordinates();
 		String s1 = Double.toString(line1);
 		double line2 = coordinates();
